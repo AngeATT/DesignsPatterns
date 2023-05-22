@@ -1,0 +1,12 @@
+Le factory pattern est utilisé dans le cas ou il y a une super classe et ses sous classes
+il permet de :
+
+-instancier des sous classes qui héritent d'une même super classes et de changer facilement à l'avenir la sous classe retourné grâce au polymorphisme
+-cacher les détails de créations des objets
+
+Avantages :
+
+-Le client peut choisir quelle sous classe instancier
+-cacher ou abstraire la création des instances
+-Améliore le couplage faible, on diminue le nombre d'instanciation de classes concrêtes
+-on peut retourner une même instance de classe plusieurs fois

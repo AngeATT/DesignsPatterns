@@ -1,0 +1,31 @@
+Le pattern Prototype est un modèle de conception de logiciel qui permet de créer de
+nouveaux objets en utilisant un objet existant comme modèle ou prototype.
+L'idée principale derrière ce modèle est de cloner ou de copier un objet
+existant plutôt que de créer un nouvel objet à partir de zéro.
+
+Quand l'utilisé ?
+
+Le pattern Prototype est particulièrement utile dans les situations suivantes :
+
+1. Lorsque la création d'un objet est coûteuse : Si la création d'un objet implique des opérations complexes ou demande beaucoup de ressources,
+ utiliser le pattern Prototype peut être avantageux. Au lieu de recréer l'objet à partir de zéro à chaque fois, on peut simplement cloner un objet
+  existant, ce qui est généralement plus rapide et plus efficace.
+
+2. Lorsque différentes variations d'objets doivent être créées : Si vous avez besoin de créer plusieurs objets similaires mais avec des différences
+ spécifiques, le pattern Prototype peut être utilisé pour cloner un objet de base et personnaliser chaque clone en fonction des variations requises.
+  Cela permet d'économiser du temps et de la complexité, car vous n'avez pas à répéter les étapes de création de base pour chaque variation.
+
+3. Lorsqu'une flexibilité accrue est nécessaire : Le pattern Prototype permet une grande flexibilité dans la création d'objets. Vous pouvez facilement
+ ajouter de nouveaux types d'objets en créant de nouveaux prototypes, sans avoir à modifier le code existant. Cela facilite l'extension du système avec
+  de nouveaux objets sans perturber les parties existantes de votre application.
+
+4. Lorsque vous souhaitez encapsuler la logique de création d'objets : En utilisant le pattern Prototype, vous pouvez encapsuler la logique de création
+ d'objets dans les prototypes, ce qui permet aux clients de travailler avec une interface ou une classe abstraite commune plutôt que d'avoir une
+ dépendance directe avec les classes concrètes d'objets. Cela favorise une conception plus flexible et modulaire.
+
+En résumé, le pattern Prototype est utilisé lorsque la création d'objets est coûteuse, que des variations d'objets doivent être gérées, que la
+flexibilité et l'extensibilité sont importantes, ou lorsque vous souhaitez encapsuler la logique de création d'objets.
+
+
+Il convient de noter que le pattern Prototype n'est pas utilisé dans le but d'obtenir des avantages en termes de performances.
+Il est uniquement utilisé pour créer de nouveaux objets à partir d'instances de prototype.

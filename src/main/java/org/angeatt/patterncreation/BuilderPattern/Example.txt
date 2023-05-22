@@ -1,0 +1,5 @@
+Exemple utilisé :
+On veut créer un système de plannification de vaccances.
+Toutefois, les vaccances de chaque touriste varient dans le contenu, c'est à dire chaque touriste plannifie chaque jour comme il le souhaite.
+L'objectif ici est de designer l'object Vacation de telle sorte
+qu'on puisse choisir la composition de chaque jour en fonction de l'hotel choisi, du dinner, d'un evenement à aller voir, ou encore de places de tickets de parking
