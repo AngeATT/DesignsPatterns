@@ -1,0 +1,16 @@
+L'Adapter Pattern aide à faire fonctionner ensemble des objets
+qui ne sont pas compatibles à première vue.
+Il agit comme un adaptateur entre deux objets pour qu'ils puissent travailler ensemble sans problème.
+
+Il crée un adaptateur entre deux classes qui ont des interfaces différentes.
+ L'adaptateur modifie l'interface d'une classe pour la rendre compatible avec l'interface attendue par une autre classe.
+ Cela permet à ces deux classes de travailler ensemble sans avoir à modifier leur code source.
+
+
+ Cas ou on peut l'utiliser :
+ -Adaptation des bibliothèques tierces : adaptateur qui transforme les appels de méthode de l'interface de la bibliothèque externe en quelque chose de plus adapté à ton code.
+ -Utilisation de modules ou de composants réutilisables
+ -Migration de code legacy : Lorsque tu dois travailler sur un projet avec un code existant,
+  tu peux rencontrer des parties du code qui ont été écrites dans une ancienne version d'un langage de programmation ou avec une approche différente.
+ -Intégration de services externes : Lorsque tu travailles avec des services externes, comme des API, ils peuvent avoir des interfaces différentes de celle de ton application.
+ -Testabilité : L'Adapter Pattern peut également être utilisé pour faciliter les tests unitaires.

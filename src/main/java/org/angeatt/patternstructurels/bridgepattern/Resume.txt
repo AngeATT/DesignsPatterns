@@ -1,0 +1,27 @@
+Explication :
+Permet de construire différents types d'objets en utilisant différentes caractéristiques.
+
+En programmation, le Bridge Pattern est utilisé lorsque tu as deux hiérarchies de classes différentes et que tu veux les combiner de manière flexible.
+L'une de ces hiérarchies représente les différentes caractéristiques ou implémentations, et l'autre représente les différentes abstractions ou fonctionnalités que tu veux construire.
+
+Le Bridge Pattern te permet de séparer ces deux hiérarchies afin qu'elles puissent varier indépendamment l'une de l'autre.
+Cela signifie que tu peux ajouter de nouvelles caractéristiques ou abstractions sans avoir à modifier le code existant, ce qui rend ton code plus souple et évolutif.
+
+Pour revenir à notre exemple de jouets, le Bridge Pattern te permettrait de créer différents jouets en combinant différentes formes (comme des carrés ou des cercles)
+avec différentes couleurs (comme des blocs rouges ou des blocs bleus). Tu peux changer les formes ou les couleurs sans avoir à refaire tout le jouet.
+
+En gros : Construire un objet à partir de plusieurs blocs tout en pouvant modifier ces blocs à souhait dans le futur
+
+Objectif :
+Decouple an abstraction from its implementation so that the two can vary independently
+
+Utilisation :
+-You want to avoid a permanent binding between an abstraction and its implementation.
+  This might be the case, for example, when the implementation must be selected or switched at run-time.
+-Both the abstractions and their implementations should be extensible by subclassing.
+  In this case, the Bridge pattern lets you combine the different abstractions and implementations and extend them independently.
+-Changes in the implementation of an abstraction should have no impact on clients; that is, their code should not have to be recompiled.
+-You have a proliferation of classes. Such a class hierarchy indicates the need for splitting an object into two parts.
+ Rumbaugh uses the term "nested generalizations" to refer to such class hierarchies.
+-You want to share an implementation among multiple objects (perhaps using reference counting),
+  and this fact should be hidden from the client. A simple example is Coplien's String class, in which multiple objects can share the same string representation.

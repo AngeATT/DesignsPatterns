@@ -2,7 +2,11 @@ Le pattern Prototype est un modèle de conception de logiciel qui permet de cré
 nouveaux objets en utilisant un objet existant comme modèle ou prototype.
 L'idée principale derrière ce modèle est de cloner ou de copier un objet
 existant plutôt que de créer un nouvel objet à partir de zéro.
+Il permet de créer de nouveaux objets à partir d’objets existants sans rendre le code dépendant de leur classe.
 
+En bref, il vous permet de créer une copie d'un objet existant et de le modifier en fonction de vos besoins, au lieu de créer un objet à partir de zéro et de le paramétrer.
+
+==================Détails ===================
 Quand l'utilisé ?
 
 Le pattern Prototype est particulièrement utile dans les situations suivantes :
