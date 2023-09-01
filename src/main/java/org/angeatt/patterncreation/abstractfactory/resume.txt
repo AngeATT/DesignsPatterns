@@ -1,4 +1,4 @@
-Design pattern qui pertme de créer une famille d'objet sans spécifier quelle classe concrete on utilise
+Design pattern qui permet de créer une famille d'objet sans spécifier quelle classe concrete on utilise
 
 L'utilisation de ce motif est pertinente lorsque :
 

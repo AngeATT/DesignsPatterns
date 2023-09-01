@@ -1,0 +1,9 @@
+La Facade est comme un guide qui simplifie l'utilisation des jouets.
+Elle regroupe tous les boutons et leviers complexes derrière une seule commande facile à utiliser.
+
+Dans le monde de la programmation, le Facade Pattern est utilisé lorsque tu as un système complexe avec de nombreuses classes et fonctionnalités,
+et que tu veux simplifier son utilisation en regroupant les fonctionnalités complexes derrière une interface simple.
+
+En gros rassembler toute la complexité d'objets et de leurs méthodes pour effectuer une tâche bien spécifique de telle sorte à n'utiliser que la "façade"
+qui nous est proposé.
+Le Facade Pattern te permet de simplifier l'utilisation d'un système complexe en regroupant les fonctionnalités derrière une interface simple et conviviale.

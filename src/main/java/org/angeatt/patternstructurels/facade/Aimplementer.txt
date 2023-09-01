@@ -1,0 +1,20 @@
+Supposons que tu développes un système de réservation de billets pour un cinéma. Le système de
+réservation est complexe car il implique plusieurs étapes, telles que la vérification de la disponibilité des sièges, la réservation des sièges choisis et le paiement de la réservation.
+
+Pour simplifier l'utilisation du système de réservation, tu peux créer une classe Facade appelée
+TicketReservationFacade. Cette classe sera responsable de fournir une interface simple pour réserver des billets.
+
+Voici comment tu pourrais organiser les classes :
+
+La classe SeatAvailability gère la vérification de la disponibilité des sièges dans le cinéma.
+La classe SeatReservation gère la réservation des sièges choisis.
+La classe PaymentProcessor gère le paiement de la réservation.
+La classe TicketReservationFacade sera responsable de coordonner ces étapes et de les rendre plus
+faciles à utiliser. Elle aura une méthode publique, par exemple reserveTickets(), qui prendra en
+compte les détails nécessaires tels que le nombre de sièges à réserver, les informations de paiement, etc.
+
+Lorsque tu appelles la méthode reserveTickets() de la Facade, elle s'occupera de coordonner les
+étapes de vérification de disponibilité des sièges, de réservation des sièges et de paiement de manière transparente pour toi.
+
+Ton objectif sera donc d'implémenter les classes TicketReservationFacade,
+SeatAvailability, SeatReservation et PaymentProcessor. Expérimente en réservant différents billets en utilisant la Facade et observe comment elle simplifie le processus de réservation.

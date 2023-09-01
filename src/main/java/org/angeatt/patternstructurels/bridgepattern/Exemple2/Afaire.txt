@@ -1,0 +1,39 @@
+
+Bien sûr ! Voici un autre exemple sans code pour que tu puisses l'implémenter toi-même :
+
+Supposons que tu développes un système de gestion d'éclairage pour une maison intelligente.
+Ton système doit prendre en charge différents types d'ampoules, tels que des ampoules LED et
+des ampoules à incandescence, ainsi que différents types de contrôleurs d'éclairage, tels que
+ des interrupteurs traditionnels et des applications mobiles.
+
+Pour utiliser le Bridge Pattern, tu créerais deux hiérarchies de classes : une pour les types
+d'ampoules et une pour les types de contrôleurs d'éclairage. La hiérarchie des ampoules comprendrait
+ des classes telles que `LightBulb` (ampoule de base) et `LEDBulb` (ampoule LED), tandis que la
+ hiérarchie des contrôleurs d'éclairage comprendrait des classes telles que `LightController` (contrôleur de base) et `MobileAppController` (contrôleur d'application mobile).
+
+Plutôt que de relier chaque type d'ampoule à un contrôleur spécifique, tu utiliserais une interface
+dans la hiérarchie des ampoules pour déléguer la fonctionnalité de contrôle à une instance de
+l'interface de contrôleur. De cette manière, tu pourrais facilement changer le contrôleur d'éclairage
+ d'une ampoule sans avoir à modifier le code de l'ampoule elle-même.
+
+Voici comment cela pourrait être implémenté de manière conceptuelle :
+
+1. Tu aurais une classe `LightBulb` avec une méthode `setController()` pour définir le contrôleur
+ d'éclairage utilisé par l'ampoule.
+2. Tu aurais une interface `LightController` avec des méthodes comme `turnOn()` et `turnOff()`
+pour contrôler l'ampoule.
+3. Tu aurais différentes classes de contrôleurs, telles que `TraditionalSwitchController`
+(contrôleur d'interrupteur traditionnel) et `MobileAppController` (contrôleur d'application mobile),
+ qui implémentent l'interface `LightController` avec leurs propres logiques de contrôle spécifiques.
+
+Ainsi, tu pourrais créer différentes instances d'ampoules (par exemple, `LightBulb` et `LEDBulb`),
+ leur attribuer différents contrôleurs en utilisant `setController()`, et utiliser les méthodes du
+  contrôleur pour allumer et éteindre les ampoules.
+
+En utilisant le Bridge Pattern, tu peux facilement ajouter de nouveaux types d'ampoules ou de
+nouveaux contrôleurs sans avoir à modifier le code existant des ampoules ou des contrôleurs.
+Cela te donne une plus grande flexibilité pour combiner différents types d'ampoules avec différents
+ types de contrôleurs dans ton système de gestion d'éclairage.
+
+J'espère que cet exemple te donne une idée claire de l'utilisation du Bridge Pattern. N'hésite pas
+à poser d'autres questions si tu en as !

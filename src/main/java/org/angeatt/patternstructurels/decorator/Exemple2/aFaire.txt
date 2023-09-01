@@ -1,0 +1,24 @@
+Bien sûr ! Voici un exemple concret d'utilisation du Decorator Pattern que tu peux essayer d'implémenter toi-même :
+
+Supposons que tu développes un jeu vidéo de course de voitures. Tu as une classe de base appelée `Car`
+qui représente une voiture de base avec des fonctionnalités de base telles que la vitesse et la direction.
+
+Maintenant, tu veux ajouter des fonctionnalités spéciales à certaines voitures, comme la capacité
+de voler et la capacité de lancer des missiles. Cependant, tu veux pouvoir ajouter ou supprimer ces
+ fonctionnalités de manière flexible sans avoir à modifier directement la classe `Car`.
+
+Pour utiliser le Decorator Pattern, tu créerais une classe de base `CarDecorator` qui hérite de la
+ classe `Car` et ajoute les nouvelles fonctionnalités. Tu créerais ensuite des classes spécifiques
+ de décorateurs, comme `FlyingCarDecorator` et `MissileLauncherCarDecorator`, qui étendent la classe
+  `CarDecorator` et ajoutent respectivement la capacité de voler et la capacité de lancer des missiles.
+
+Avec le Decorator Pattern, tu peux créer différentes instances de voitures de base et les envelopper
+ avec les décorateurs appropriés pour ajouter les fonctionnalités spéciales souhaitées.
+
+L'idée est d'utiliser la composition au lieu de l'héritage pour ajouter des fonctionnalités
+supplémentaires à un objet existant. Chaque décorateur agit comme une couche autour de l'objet
+de base, lui ajoutant des fonctionnalités supplémentaires.
+
+Maintenant, à toi de jouer ! Essaie d'implémenter cet exemple en créant les classes `Car`,
+`CarDecorator`, `FlyingCarDecorator` et `MissileLauncherCarDecorator`.
+Expérimente en ajoutant différentes fonctionnalités à différentes voitures de base et observe comment les décorateurs ajoutent les fonctionnalités supplémentaires.

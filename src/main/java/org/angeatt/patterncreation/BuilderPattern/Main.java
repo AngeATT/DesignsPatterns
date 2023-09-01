@@ -13,6 +13,8 @@ public class Main {
       vacation.getVaccationPlanner();
       Vacation vacation1 = new Vacation.VacationBuilder("sebastien","nomm").build();
       vacation1.getVaccationPlanner();
+
+      Eleve eleve = new EleveBuilder().setNom("francois").build();
   }
 
 

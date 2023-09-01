@@ -1,0 +1,7 @@
+Objectif
+Attach additional responsibilities to an object dynamically.
+Decorators provide a flexible alternative to subclassing for extending functionality.
+
+Ajouter un comportement à un objet dynamiquement sans en créer un autre
+
+Eh bien, le Decorator Pattern est un peu comme cela. Il te permet d'ajouter de nouvelles fonctionnalités ou décorations à un objet existant sans avoir à le modifier directement.
